@@ -20,4 +20,5 @@ public class TipoPagamento {
     public void setNomePagamento(String nomePagamento) {
         this.nomePagamento = nomePagamento;
     }
+
 }

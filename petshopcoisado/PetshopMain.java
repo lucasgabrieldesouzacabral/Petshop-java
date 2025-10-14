@@ -59,8 +59,8 @@ public class PetshopMain {
         System.out.println("ID: " + produto2.getidItem() + " | Nome: " + produto2.getnomeItem() + " | Preço: " + produto2.getprecoItem());
 
          System.out.println("\n=== Contas ===");
-        System.out.println("Conta ID: " + conta.getIdCompra() + " | Pagamento: R$" + conta.getPagamento() + " | Atendente: " + conta.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta.getTipoPagamento());
-        System.out.println("Conta ID: " + conta2.getIdCompra() + " | Pagamento: R$" + conta2.getPagamento() + " | Atendente: " + conta2.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta2.getTipoPagamento());
+        System.out.println("Conta ID: " + conta.getIdCompra() + " | Pagamento: R$" + conta.getPagamento() + " | Atendente: " + conta.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta.getTipoPagamento().getNomePagamento());
+        System.out.println("Conta ID: " + conta2.getIdCompra() + " | Pagamento: R$" + conta2.getPagamento() + " | Atendente: " + conta2.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta2.getTipoPagamento().getNomePagamento());
 
         }
     }
