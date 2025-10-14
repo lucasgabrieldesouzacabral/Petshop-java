@@ -23,6 +23,46 @@ public class cliente {
     }
 
 
+    public String getDonoNome() {
+        return this.donoNome;
+    }
 
-    
+    public void setDonoNome(String donoNome) {
+        this.donoNome = donoNome;
+    }
+
+    public String getTelefone() {
+        return this.telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEndereco() {
+        return this.endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public int getIdDonoAnimal() {
+        return this.idDonoAnimal;
+    }
+
+    public void setIdDonoAnimal(int idDonoAnimal) {
+        this.idDonoAnimal = idDonoAnimal;
+    }
+
+    public List<animal> getAnimais() {
+        return this.animais;
+    }
+
+    public void setAnimais(List<animal> animais) {
+        this.animais = animais;
+    }
+
+
+
 }
