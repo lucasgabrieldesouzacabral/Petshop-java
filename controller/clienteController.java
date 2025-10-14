@@ -2,22 +2,22 @@ package controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import model.Cliente;
 import model.Animal;
+import model.Cliente;
 
 
 public class ClienteController {
 
-    private List<Cliente> clientesCadastrados;
+    private List<Cliente> ClientesCadastrados;
     private int proximoIdCliente = 1;
 
     public ClienteController() {
-        this.clientesCadastrados = new ArrayList<>();
+        this.ClientesCadastrados = new ArrayList<>();
     }
 
     public void cadastrarCliente(String donoNome, String telefone, String endereco, int idDonoAnimal) {
         Cliente cliente = new Cliente(donoNome, telefone, endereco, idDonoAnimal);
-        clientesCadastrados.add(cliente);
+        ClientesCadastrados.add(cliente);
         proximoIdCliente++;
     }
 
@@ -30,7 +30,7 @@ public class ClienteController {
         return false;
     }
     public Cliente buscarClientePorId(int id) {
-        for (Cliente cliente : clientesCadastrados) {
+        for (Cliente cliente : ClientesCadastrados) {
             if (cliente.getIdDonoAnimal() == id) {
                 return cliente;
             }
@@ -39,7 +39,7 @@ public class ClienteController {
     }
 
     public List<Cliente> listarTodosClientes() {
-        return clientesCadastrados;
+        return ClientesCadastrados;
     }
 
 }
