@@ -3,11 +3,13 @@ public class Conta {
     private double pagamento;
     private int idCompra;
     private Funcionario atendente;
+    private TipoPagamento tipoPagamento;
 
-    public Conta(double pagamento, int idCompra, Funcionario atendente) {
+    public Conta(double pagamento, int idCompra, Funcionario atendente, TipoPagamento tipoPagamento) {
         this.pagamento = pagamento;
         this.idCompra = idCompra;
         this.atendente = atendente;
+        this.tipoPagamento = tipoPagamento;
     }
    
     public double getPagamento() {
@@ -29,5 +31,11 @@ public class Conta {
     }
     public void setAtendente(Funcionario atendente) {
         this.atendente = atendente;
+    }
+       public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 }

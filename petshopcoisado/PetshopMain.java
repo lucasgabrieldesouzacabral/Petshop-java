@@ -23,7 +23,14 @@ public class PetshopMain {
         Item item2 = new Item(2,"Consulta Veterinária", 200.0);
         Item item3 = new Item(3,"Bolinha de morder", 10.0);
         Item item4 = new Item(4,"Ração Premium 50kg", 150.0);
-        // ----------------------------------------------------------------
+
+        TipoPagamento tipoPagamento = new TipoPagamento(1, "Cartão de Crédito");
+        TipoPagamento tipoPagamento2 = new TipoPagamento(2, "Dinheiro");
+
+          // ----------------------------------------------------------------
+        Conta conta = new Conta(160.0, 1, funcionario, tipoPagamento);
+        Conta conta2 = new Conta(200.0, 2, funcionario2, tipoPagamento2);
+
         Servico servico = new Servico(1, animal, funcionario, item, "10:00 AM");
         Servico servico2 = new Servico(2, animal2, funcionario2, item2, "11:00 AM");
         // ----------------------------------------------------------------
@@ -51,5 +58,9 @@ public class PetshopMain {
         System.out.println("ID: " + produto.getidItem() + " | Nome: " + produto.getnomeItem() + " | Preço: " + produto.getprecoItem());
         System.out.println("ID: " + produto2.getidItem() + " | Nome: " + produto2.getnomeItem() + " | Preço: " + produto2.getprecoItem());
 
+         System.out.println("\n=== Contas ===");
+        System.out.println("Conta ID: " + conta.getIdCompra() + " | Pagamento: R$" + conta.getPagamento() + " | Atendente: " + conta.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta.getTipoPagamento());
+        System.out.println("Conta ID: " + conta2.getIdCompra() + " | Pagamento: R$" + conta2.getPagamento() + " | Atendente: " + conta2.getAtendente().getNomeFuncionario() + " | Tipo de Pagamento: " + conta2.getTipoPagamento());
+
+        }
     }
-}
