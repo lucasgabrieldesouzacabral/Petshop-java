@@ -1,5 +1,5 @@
 package model;
 
-public class produto {
+public class Produto {
     
 }

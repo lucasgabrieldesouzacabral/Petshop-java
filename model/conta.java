@@ -1,5 +1,5 @@
 package model;
 
-public class conta {
+public class Conta {
     
 }

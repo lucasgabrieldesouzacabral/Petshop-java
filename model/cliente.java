@@ -3,22 +3,22 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class cliente {
+public class Cliente {
     private String donoNome;
     private String telefone;
     private String endereco;
     private int idDonoAnimal;
-    private List<animal> animais;
+    private List<Animal> animais;
 
-    public cliente(String donoNome, String telefone, String endereco, int idDonoAnimal) {
+    public Cliente(String donoNome, String telefone, String endereco, int idDonoAnimal) {
         this.donoNome = donoNome;
         this.telefone = telefone;
         this.endereco = endereco;
         this.idDonoAnimal = idDonoAnimal;
         this.animais = new ArrayList<>();
     }
-    
-    public void adicionarAnimal(animal animal){
+
+    public void adicionarAnimal(Animal animal){
         animais.add(animal);
     }
 
@@ -55,11 +55,11 @@ public class cliente {
         this.idDonoAnimal = idDonoAnimal;
     }
 
-    public List<animal> getAnimais() {
+    public List<Animal> getAnimais() {
         return this.animais;
     }
 
-    public void setAnimais(List<animal> animais) {
+    public void setAnimais(List<Animal> animais) {
         this.animais = animais;
     }
 
