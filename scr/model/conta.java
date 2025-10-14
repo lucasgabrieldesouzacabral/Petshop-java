@@ -10,21 +10,21 @@ public class Conta {
         this.idCompra = idCompra;
         this.atendente = atendente;
     }
-    // --------------------------------------------
+   
     public double getPagamento() {
         return pagamento;
     }
     public void setPagamento(double pagamento) {
         this.pagamento = pagamento;
     }
-    // --------------------------------------------
+    
     public int getIdCompra() {
         return idCompra;
     }
     public void setIdCompra(int idCompra) {
         this.idCompra = idCompra;
     }
-    // --------------------------------------------
+    
     public Funcionario getAtendente() {
         return atendente;
     }

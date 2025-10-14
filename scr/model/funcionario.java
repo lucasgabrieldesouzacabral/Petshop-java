@@ -15,21 +15,18 @@ public class Funcionario {
         this.animaisAtendidos = new ArrayList<>();
     }
 
-    // --------------------------------------------
     public String getNomeFuncionario() {
         return nomeFuncionario;
     }
     public void setNomeFuncionario(String nomeFuncionario) {
         this.nomeFuncionario = nomeFuncionario;
     }
-    // --------------------------------------------
     public String getFuncao() {
         return funcao;
     }
     public void setFuncao(String funcao) {
         this.funcao = funcao;
     }
-    // --------------------------------------------
     public List<Animal> getAnimaisAtendidos() {
         return animaisAtendidos;
     }

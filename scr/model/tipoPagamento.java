@@ -8,14 +8,12 @@ public class TipoPagamento {
         this.idPagamento = idPagamento;
         this.nomePagamento = nomePagamento;
     }
-    // --------------------------------------------
     public int getIdPagamento() {
         return idPagamento;
     }
     public void setIdPagamento(int idPagamento) {
         this.idPagamento = idPagamento;
     }
-    // --------------------------------------------
     public String getNomePagamento() {
         return nomePagamento;
     }
