@@ -5,11 +5,13 @@ import java.util.List;
 public class Funcionario {
     private String nomeFuncionario;
     private String funcao;
+    private double salario;
     private List<Animal> animaisAtendidos;
 
-    public Funcionario(String nomeFuncionario, String funcao) {
+    public Funcionario(String nomeFuncionario, String funcao, double salario) {
         this.nomeFuncionario = nomeFuncionario;
         this.funcao = funcao;
+        this.salario = salario;
         this.animaisAtendidos = new ArrayList<>();
     }
 
@@ -36,5 +38,12 @@ public class Funcionario {
     }
     public void adicionarAnimalAtendido(Animal animal) {
         this.animaisAtendidos.add(animal);
+    }
+    // --------------------------------------------
+    public double getSalario() {
+        return salario;
+    }
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 }

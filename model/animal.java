@@ -7,13 +7,15 @@ public class Animal{
     private String tipoAnimal;
     private String especieAnimal;
     private Cliente dono;
+    private double pesoAnimal;
 
-     public Animal(int idAnimal, String nomeAnimal, int idadeAnimal, String tipoAnimal, String especieAnimal, Cliente dono) {
+     public Animal(int idAnimal, String nomeAnimal, int idadeAnimal, String tipoAnimal, String especieAnimal, Cliente dono, double pesoAnimal) {
         this.idAnimal = idAnimal;
         this.nomeAnimal = nomeAnimal;
         this.idadeAnimal = idadeAnimal;
         this.tipoAnimal = tipoAnimal;
         this.especieAnimal = especieAnimal;
+        this.pesoAnimal = pesoAnimal;
         this.dono = dono;
     }
 
@@ -59,5 +61,11 @@ public class Animal{
     public void setDono(Cliente dono) {
         this.dono = dono;
     }
-
+    // --------------------------------------------
+    public double getPesoAnimal() {
+        return this.pesoAnimal;
+    }
+    public void setPesoAnimal(double pesoAnimal) {
+        this.pesoAnimal = pesoAnimal;
+    }
 }
