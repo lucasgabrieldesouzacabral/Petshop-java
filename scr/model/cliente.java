@@ -18,7 +18,6 @@ public class Cliente {
         this.idDonoAnimal = idDonoAnimal;
     }
 
-    // --------------------------------------------
     public String getDonoNome() {
         return this.donoNome;
     }
@@ -26,7 +25,7 @@ public class Cliente {
     public void setDonoNome(String donoNome) {
         this.donoNome = donoNome;
     }
-    // --------------------------------------------
+
     public String getTelefone() {
         return this.telefone;
     }
@@ -34,7 +33,7 @@ public class Cliente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    // --------------------------------------------
+
     public String getEndereco() {
         return this.endereco;
     }
@@ -42,7 +41,7 @@ public class Cliente {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    // --------------------------------------------
+    
     public int getIdDonoAnimal() {
         return this.idDonoAnimal;
     }
@@ -50,7 +49,7 @@ public class Cliente {
     public void setIdDonoAnimal(int idDonoAnimal) {
         this.idDonoAnimal = idDonoAnimal;
     }
-    // --------------------------------------------
+    
     public void adicionarAnimal(Animal animal) {
         this.animais.add(animal);
         animal.setDono(this);

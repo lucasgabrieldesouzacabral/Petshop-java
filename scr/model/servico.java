@@ -8,28 +8,24 @@ public class Servico extends Item{
         this.servicoHorario = servicoHorario;
     
     }
-    // --------------------------------------------
     public String getServicoHorario() {
         return servicoHorario;
     }
     public void setServicoHorario(String servicoHorario) {
         this.servicoHorario = servicoHorario;
     }
-    // --------------------------------------------
     public String getNomeItem() {
         return super.getNomeItem();
     }
     public void setNomeItem(String nomeItem) {
         super.setNomeItem(nomeItem);
     }
-    // --------------------------------------------
     public double getPrecoItem() {
         return super.getPrecoItem();
     }
     public void setPrecoItem(double precoItem) {
         super.setPrecoItem(precoItem);
     }
-    // --------------------------------------------
     public int getIdItem() {
         return super.getIdItem();
     }

@@ -17,42 +17,42 @@ public class Animal{
         this.dono = dono;
     }
 
-   // --------------------------------------------
+   
     public int getIdAnimal() {
         return this.idAnimal;
     }
     public void setIdAnimal(int idAnimal) {
         this.idAnimal = idAnimal;
     }
-    // --------------------------------------------
+    
     public String getNomeAnimal() {
         return this.nomeAnimal;
     }
     public void setNomeAnimal(String nomeAnimal) {
         this.nomeAnimal = nomeAnimal;
     }
-    // --------------------------------------------
+
     public int getIdadeAnimal() {
         return this.idadeAnimal;
     }
     public void setIdadeAnimal(int idadeAnimal) {
         this.idadeAnimal = idadeAnimal;
     }
-    // --------------------------------------------
+
     public String getTipoAnimal() {
         return this.tipoAnimal;
     }
     public void setTipoAnimal(String tipoAnimal) {
         this.tipoAnimal = tipoAnimal;
     }
-    // --------------------------------------------
+
     public String getEspecieAnimal() {
         return this.especieAnimal;
     }
     public void setEspecieAnimal(String especieAnimal) {
         this.especieAnimal = especieAnimal;
     }
-    // --------------------------------------------
+    
     public Cliente getDono() {
         return this.dono;
     }
