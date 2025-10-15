@@ -52,4 +52,9 @@ public class Servico extends Item{
     public void setFuncionario(Funcionario funcionario) {
         this.funcionario = funcionario;
     }
+
+    @Override
+    public String descricaoCompleta() {
+        return "Serviço: " + getnomeItem() + " - Horário: " + servicoHorario + " - R$" + getprecoItem();
+    }
 }

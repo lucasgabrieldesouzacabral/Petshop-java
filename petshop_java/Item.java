@@ -13,4 +13,9 @@ public class Item {
     
     public double getprecoItem() { return precoItem; }
     public void setPrecoItem(double precoItem) { this.precoItem = precoItem; }
+
+
+    public String descricaoCompleta() {
+        return getnomeItem() + " - R$" + getprecoItem();
+    }
 }
