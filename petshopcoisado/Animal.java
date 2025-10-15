@@ -7,8 +7,9 @@ public class Animal {
     private String racaAnimal;
     private Cliente dono;
     private double pesoAnimal;
+    private Funcionario funcionarioatendido;
 
-    public Animal(int idAnimal, String nomeAnimal, int idadeAnimal, String especieAnimal, String racaAnimal, Cliente dono, double pesoAnimal) {
+    public Animal(int idAnimal, String nomeAnimal, int idadeAnimal, String especieAnimal, String racaAnimal, Cliente dono, double pesoAnimal, Funcionario funcionarioatendido) {
         this.idAnimal = idAnimal;
         this.nomeAnimal = nomeAnimal;
         this.idadeAnimal = idadeAnimal;
@@ -16,9 +17,9 @@ public class Animal {
         this.racaAnimal = racaAnimal;
         this.dono = dono;
         this.pesoAnimal = pesoAnimal;
+        this.funcionarioatendido = funcionarioatendido;
     }
 
-    // Getters e Setters
     public int getIdAnimal() { return idAnimal; }
     public void setIdAnimal(int idAnimal) { this.idAnimal = idAnimal; }
     
@@ -41,4 +42,7 @@ public class Animal {
     public void setPesoAnimal(double pesoAnimal) { this.pesoAnimal = pesoAnimal; }
     
     public int getIdDono() { return dono != null ? dono.getIdDonoAnimal() : 0; }
+
+    public Funcionario getfuncionarioatendido() { return funcionarioatendido; }
+    public void setfuncionarioatendido(Funcionario funcionarioatendido) { this.funcionarioatendido = funcionarioatendido; }
 }

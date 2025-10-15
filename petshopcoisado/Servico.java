@@ -1,21 +1,55 @@
-
-public class Servico {
+public class Servico extends Item{
     private int idServico;
-    private Animal animal;
-    private Funcionario funcionario;
-    private Item item;
     private String servicoHorario;
+    private Animal animal;
+   private Funcionario funcionario;
 
-    public Servico(int idServico, Animal animal, Funcionario funcionario, Item item, String servicoHorario) {
+    public Servico(int idServico, String nomeItem, double precoItem, String servicoHorario, Animal animal, Funcionario funcionario) {
+        super(nomeItem, precoItem);
         this.idServico = idServico;
+        this.servicoHorario = servicoHorario;
         this.animal = animal;
         this.funcionario = funcionario;
-        this.item = item;
+    
+    }
+   
+    public String getServicoHorario() {
+        return servicoHorario;
+    }
+    public void setServicoHorario(String servicoHorario) {
         this.servicoHorario = servicoHorario;
     }
-
-    public String getservicoHorario() { return servicoHorario; }
-    public int getidItem() { return item.getidItem(); }
-    public String getnomeItem() { return item.getnomeItem(); }
-    public double getprecoItem() { return item.getprecoItem(); }
+   
+    public String getNomeItem() {
+        return super.getnomeItem();
+    }
+    public void setNomeItem(String nomeItem) {
+        super.setNomeItem(nomeItem);
+    }
+   
+    public double getPrecoItem() {
+        return super.getprecoItem();
+    }
+    public void setPrecoItem(double precoItem) {
+        super.setPrecoItem(precoItem);
+    }
+    
+    public int getIdServico() {
+        return idServico;
+    }
+    public void setIdServico(int idServico) {
+        this.idServico = idServico;
+    }
+    public Animal getAnimal() {
+        return animal;
+    }
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+    }
 }

@@ -10,11 +10,11 @@ public class Cliente {
 
     private List<Animal> animais = new ArrayList<>();
 
-    public Cliente(String donoNome, String endereco) {
+    public Cliente(String donoNome, String endereco, int idDonoAnimal, String telefone) {
         this.donoNome = donoNome;
         this.endereco = endereco;
-        this.telefone = ""; 
-        this.idDonoAnimal = 0; 
+        this.telefone = telefone; 
+        this.idDonoAnimal = idDonoAnimal; 
     }
     
     public Cliente(String donoNome, String telefone, String endereco, int idDonoAnimal) {

@@ -4,12 +4,14 @@ public class Conta {
     private int idCompra;
     private Funcionario atendente;
     private TipoPagamento tipoPagamento;
+    private Animal animal;
 
-    public Conta(double pagamento, int idCompra, Funcionario atendente, TipoPagamento tipoPagamento) {
+    public Conta(double pagamento, int idCompra, Funcionario atendente, TipoPagamento tipoPagamento, Animal animal) {
         this.pagamento = pagamento;
         this.idCompra = idCompra;
         this.atendente = atendente;
         this.tipoPagamento = tipoPagamento;
+        this.animal = animal;
     }
    
     public double getPagamento() {
@@ -38,4 +40,11 @@ public class Conta {
     public void setTipoPagamento(TipoPagamento tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
     }
+    public Animal getAnimal() {
+        return animal;
+    }
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+    
 }
