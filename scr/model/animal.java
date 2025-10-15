@@ -61,7 +61,7 @@ public class Animal{
     public void setDono(Cliente dono) {
         this.dono = dono;
     }
-    // --------------------------------------------
+    
     public double getPesoAnimal() {
         return this.pesoAnimal;
     }

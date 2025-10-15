@@ -36,7 +36,7 @@ public class Funcionario {
     public void adicionarAnimalAtendido(Animal animal) {
         this.animaisAtendidos.add(animal);
     }
-    // --------------------------------------------
+    
     public double getSalario() {
         return salario;
     }

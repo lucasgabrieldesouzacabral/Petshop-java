@@ -15,19 +15,19 @@ public class Servico extends Item{
         this.servicoHorario = servicoHorario;
     }
     public String getNomeItem() {
-        return super.getNomeItem();
+        return super.getnomeItem();
     }
     public void setNomeItem(String nomeItem) {
         super.setNomeItem(nomeItem);
     }
     public double getPrecoItem() {
-        return super.getPrecoItem();
+        return super.getprecoItem();
     }
     public void setPrecoItem(double precoItem) {
         super.setPrecoItem(precoItem);
     }
     public int getIdItem() {
-        return super.getIdItem();
+        return super.getidItem();
     }
     public void setIdItem(int idItem) {
         super.setIdItem(idItem);
