@@ -4,39 +4,39 @@ public class PetshopMain {
     public static void main(String[] args) {
         
         Petshop petshop = new Petshop("PetLovers", "Liberdade, 123");
-        
+        // ----------------------------------------------------------------
         Funcionario funcionario = new Funcionario("Nadir", "Atendente", 2500.0);
         Funcionario funcionario2 = new Funcionario("Albert Einstein", "Veterinário", 5000.0);
-        
+        // ----------------------------------------------------------------
         Cliente cliente = new Cliente("Juliete", "Rua dos Cuscuz, 456");
         Cliente cliente2 = new Cliente("Davi Brito", "Rua das Calabresas, 789");
-        
+        // ----------------------------------------------------------------
         Animal animal = new Animal(1, "Zaczinho", 5, "Cachorro", "Pitbull", cliente, 20.5);
         Animal animal2 = new Animal(2, "Mimo Pingo Fahrenheit Pessoa", 3, "Gato", "Siamês", cliente2, 10.0);
-       
+        // ----------------------------------------------------------------
         cliente.adicionarAnimal(animal);
         cliente2.adicionarAnimal(animal2);
-        
+        // ----------------------------------------------------------------
         funcionario.adicionarAnimalAtendido(animal);
         funcionario2.adicionarAnimalAtendido(animal2);
-        
+        // ----------------------------------------------------------------
         Item item = new Item(1,"Banho e Tosa", 150.0);
         Item item2 = new Item(2,"Consulta Veterinária", 200.0);
         Item item3 = new Item(3,"Bolinha de morder", 10.0);
         Item item4 = new Item(4,"Ração Premium 50kg", 150.0);
-        
+        // ----------------------------------------------------------------
         Servico servico = new Servico(1, animal, funcionario, item, "10:00 AM");
         Servico servico2 = new Servico(2, animal2, funcionario2, item2, "11:00 AM");
-        
+        // ----------------------------------------------------------------
         Produto produto = new Produto(1, "Bolinha de morder", 10.0);
         Produto produto2 = new Produto(2, "Ração Premium 50kg", 150.0);
-        
+        // ----------------------------------------------------------------
         TipoPagamento tipoPagamento = new TipoPagamento(1, "Cartão de Crédito");
         TipoPagamento tipoPagamento2 = new TipoPagamento(2, "Dinheiro");
-       
+        // ----------------------------------------------------------------
         Conta conta = new Conta(160.0, 1, funcionario, tipoPagamento);
         Conta conta2 = new Conta(200.0, 2, funcionario2, tipoPagamento2);
-        
+        // ----------------------------------------------------------------
 
         System.out.println("=== Clientes ===");
         System.out.println("Nome: " + cliente.getNome() + " | Telefone: " + cliente.getTelefone() + " | Endereço: " + cliente.getEndereco());
