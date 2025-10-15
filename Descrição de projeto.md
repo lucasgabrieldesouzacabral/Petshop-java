@@ -1,3 +1,0 @@
-A ideia central é fazer o sistema de um petshop, incluindo os clientes que colocam seus animais lá para serem atendidos por um funcionário. Dessa relação funcionário-animal, um produto ou um serviço é realizado(ou os dois), ambos herdando características em comum da classe item. Produto e serviço geram uma conta a se pagar pelo cliente. A conta também precisa do tipo de pagamento, seja em dinheiro ou em crédito.A relação de petshop com cliente é de composição(n sei se o nome é esse mesmo, é o diamante com fundo vazio), já que o cliente existe sem o petshop, mas o petshop pode atender vários clientes.
-
-Grupo F: Lisandro Luan, Isaac Pessoa e Lucas Gabriel
